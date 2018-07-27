@@ -6,7 +6,7 @@ import json
 from measures import Measures
 
 # this is the location of your data; has to be downloaded from http://cogcomp.org/multirc/
-inputFile = '../data/dev_83-with-lucene.json'
+inputFile = '../data/dev_83-fixedIds.json'
 
 
 measures = Measures()
