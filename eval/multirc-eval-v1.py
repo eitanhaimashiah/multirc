@@ -6,18 +6,18 @@ import json
 from measures import Measures
 
 # this is the location of your data; has to be downloaded from http://cogcomp.org/multirc/
-inputFile = '/Users/daniel/ideaProjects/hard-qa/splitv1/dev_83-with-lucene.json'
+inputFile = '../data/dev_83-with-lucene.json'
 
 
 measures = Measures()
 
 def main():
-    eval('baseline-scores/human-01.json')
-    # eval('baseline-scores/allOnes.json')
-    # eval('baseline-scores/allZeros.json')
-    # eval('baseline-scores/simpleLR.json')
-    # eval('baseline-scores/lucene_world.json')
-    # eval('baseline-scores/lucene_paragraphs.json')
+    eval('../baseline-scores/human-01.json')
+    # eval('../baseline-scores/allOnes.json')
+    # eval('../baseline-scores/allZeros.json')
+    # eval('../baseline-scores/simpleLR.json')
+    # eval('../baseline-scores/lucene_world.json')
+    # eval('../baseline-scores/lucene_paragraphs.json')
 
 # the input to the `eval` function is the file which contains the binary predictions per question-id
 def eval(outFile):
